@@ -123,52 +123,6 @@ finsight/
 
 ---
 
-## ⚙️ Setup & Run
-
-### 1. Clone the repo
-```bash
-git clone https://github.com/YOUR_USERNAME/finsight.git
-cd finsight
-```
-
-### 2. Install dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Download the dataset
-Go to: https://www.kaggle.com/datasets/kartik2112/fraud-detection
-
-Download and place `fraudTrain.csv` and `fraudTest.csv` in the `data/` folder.
-
-### 4. Run the pipeline
-```bash
-python notebooks/step1_load_data.py
-python notebooks/step2_eda.py
-python notebooks/step3_rfm_segmentation.py
-python notebooks/step5_prophet_forecast.py
-python notebooks/export_for_powerbi.py
-```
-
-### 5. MySQL queries
-Open `sql/mysql_queries.sql` in MySQL Workbench. Import the CSVs using the Table Data Import Wizard, then run any of the 15 queries.
-
----
-
-## 📊 Dashboard
-
-The Power BI dashboard (`powerbi/FinSight_Dashboard.pbix`) contains 5 pages:
-
-| Page | Content |
-|---|---|
-| Overview | KPI cards, monthly revenue trend, category breakdown |
-| Spending Patterns | Hour × day heatmap, age group, gender, day-of-week |
-| Customer Segments | RFM donut, revenue by segment, scatter plot |
-| Fraud Analytics | Fraud rate by category, state map, hour pattern |
-| Forecast | 90-day Prophet forecast with confidence band |
-
----
-
 ## 🛠️ Tech Stack
 
 | Tool | Purpose |
